@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="styles/glider.css">
+  <link rel="stylesheet" href="styles/glide.theme.css">
+  <link rel="stylesheet" href="styles/imagezoom.css">
+  <link rel="stylesheet" href="styles/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Source+Sans+Pro:300,400&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/36b19973e3.js" crossorigin="anonymous"></script>
+  <title>Suburban Contracting</title>
+</head>
+
+<body>
+  <header id="Home">
+    <div class="nav">
+      <div class="logo">
+        <a href="#">SUBURBAN CONTRACTING</a>
+      </div>
+      <input type="checkbox" id="toggle" />
+      <label for="toggle">&#9776;</label>
+      <div class="menu">
+        <a href="#About" id="about">ABOUT</a>
+        <!-- <i class="hammer fas fa-hammer" id="hammer1"></i> -->
+        <a href="#Services" id="services">SERVICES</a>
+        <!-- <i class="hammer fas fa-hammer" id="hammer2"></i> -->
+        <a href="#Portfolio" id="portfolio">PORTFOLIO</a>
+        <!-- <i class="hammer fas fa-hammer" id="hammer3"></i> -->
+        <a href="#Contact" id="contact">CONTACT</a>
+        <!-- <i class="hammer fas fa-hammer" id="hammer4"></i> -->
+      </div>
+    </div>
+
+    <div class="heroContainer">
+      <div class="hero">
+        <h1>TIME TO RENOVATE?</h1>
+        <h3>Learn how you can get a free estimate!</h3>
+        <a href="#About"><button>ABOUT US</button></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT SECTION -->
+  <section id="About">
+    <div class="aboutFlex">
+      <div class="aboutHeading">
+        <h2>ABOUT US</h2>
+        <hr />
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+      </div>
+      <div class="aboutText">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia nisi
+          et nesciunt consequatur voluptas nemo, placeat impedit aliquam nobis
+          exercitationem explicabo praesentium enim. Cumque suscipit rerum
+          placeat necessitatibus repellat delectus.
+        </p>
+      </div>
+    </div>
+    <a href="#Portfolio"><button>SERVICES</button></a>
+  </section>
+
+  <!-- SERVICES SECTION -->
+
+  <section id="Services">
+    <div class="servicesFlex">
+      <div class="box" id="box1">
+        <h3>KITCHEN & CABINET</h3>
+        <hr />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+          rem dicta reprehenderit.
+        </p>
+      </div>
+      <div class="box" id="box2">
+        <h3>BATHROOM & SHOWER</h3>
+        <hr />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+          rem dicta reprehenderit.
+        </p>
+      </div>
+
+      <div class="box" id="box3">
+        <h3>FLOORS & TILES</h3>
+        <hr />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+          rem dicta reprehenderit.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HELP SECTION -->
+
+  <section id="Help">
+    <div class="helpSection">
+      <div class="helpTitle">
+        <h2>NEED HELP?</h2>
+      </div>
+      <div class="helpText">
+        <h3>
+          Call us for guidance and to schedule a free estimate!
+        </h3>
+      </div>
+      <div class="helpButton">
+        <button>CALL NOW!</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="Portfolio">
+    <div class="portfolioHeading">
+      <h2>OUR PROJECTS</h2>
+      <hr />
+      <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+    </div>
+    <div class="gliderContainer">
+
+
+      <div class="glide">
+
+        <div class="glide__track" data-glide-el="track">
+
+          <ul class="glide__slides">
+
+            <li class="glide__slide"><img src="/img/portfolio-img/bathroom1.jpg" id="myImg" class="modalImage" alt="">
+            </li>
+            <li class="glide__slide"><img src="/img/portfolio-img/bathroom2.jpg" alt="" class="modalImage"></li>
+            <li class="glide__slide"><img src="/img/portfolio-img/bathtub-tiles.jpg" alt="" class="modalImage"></li>
+            <li class="glide__slide"><img src="/img/portfolio-img/bathroom3.jpg" alt="" class="modalImage"></li>
+            <li class="glide__slide"><img src="/img/portfolio-img/bathroom-sink1.JPG" alt="Bathroom Sink"
+                class="modalImage"></li>
+            <li class="glide__slide"><img src="/img/portfolio-img/shower-tiles1.JPG" alt="" class="modalImage"></li>
+            <li class="glide__slide"><img src="/img/portfolio-img/bathroom-sink2.JPG" alt="" class="modalImage"></li>
+
+
+          </ul>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--right" data-glide-dir="<">
+            <i class="fas fa-arrow-circle-right"></i></button> <button class="glide__arrow glide__arrow--left"
+            data-glide-dir=">"><i class="fas fa-arrow-circle-left"></i>
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <a href="#Portfolio"><button id="servicesButton">CONTACT US</button></a>
+
+
+
+
+    <div id="myModal" class="modal">
+      <img class="modal-content" id="img01" alt="">
+    </div>
+  </section>
+
+  <section id="Contact">
+    <div class="contactContainer">
+      <div class="contactText">
+
+        <h2>CONTACT</h2>
+        <hr />
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+        <H1>604-360-1478</H1>
+      </div>
+      <form class="contactForm">
+        <input type="text" name="Name" id="Name">
+        <input type="text" name="Email" id="Email">
+        <input type="number" name="Number" id="Number">
+        <input type="text" name="Messag" id="Message">
+        <button>SEND</button>
+      </form>
+
+    </div>
+
+  </section>
+
+
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+
+<script src="script.js"></script>
+<script src="imageZoom.js"></script>
+
+
+
+</html>

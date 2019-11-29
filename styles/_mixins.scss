@@ -1,0 +1,30 @@
+@mixin flexbox($direction) {
+  display: flex;
+  flex-direction: $direction;
+}
+
+@mixin sectionHeading($color) {
+  font-size: 3.5rem;
+  color: $color;
+}
+
+@mixin section ($background) {
+  height: 100%;
+  width: 100%;
+  background: $background;
+}
+
+@mixin button ($color, $bgcolor) {
+  font-weight: 700;
+  text-transform: capitalize;
+  width: 131px;
+  height: 43px;
+  margin: 25px 0;
+  font-size: 0.9rem;
+  color: $color;
+  background-color: $bgcolor;
+  border-radius: 3px;
+  border: none;
+  // opacity: .9;
+  cursor: pointer;
+}

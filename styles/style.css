@@ -1,0 +1,665 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  list-style: none;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+ul li {
+  padding: 0 15px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+p {
+  font-family: "Source Sans Pro";
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #9A9A9A;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #faa237;
+  border-bottom: 1px solid #faa237;
+  border-radius: 1px;
+  width: 20%;
+  margin: 10px 0;
+}
+
+button:hover {
+  background-color: black;
+  color: #FAA237;
+  border: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+header {
+  height: 650px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/img/stock-img/renovate-header.jpg) no-repeat center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url(/img/stock-img/renovate-header.jpg) no-repeat center;
+  background-size: cover;
+}
+
+header button {
+  font-weight: 700;
+  text-transform: capitalize;
+  width: 131px;
+  height: 43px;
+  margin: 25px 0;
+  font-size: 0.9rem;
+  color: black;
+  background-color: #FAA237;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+header button:hover {
+  background-color: black;
+  color: #FAA237;
+  border: none;
+}
+
+header button:focus {
+  outline: none;
+}
+
+label {
+  margin: 0 40px 0 0;
+  float: right;
+  color: white;
+  font-size: 1.8em;
+  line-height: 70px;
+  display: none;
+  width: 26px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#toggle {
+  float: right;
+  display: none;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: 800;
+  padding: 20px 30px;
+}
+
+.menu {
+  font-weight: 600;
+  font-size: 1rem;
+  z-index: 0;
+  padding: 20px 30px;
+}
+
+.menu a {
+  padding: 0 10px;
+  clear: right;
+}
+
+#about:hover,
+#services:hover,
+#portfolio:hover,
+#contact:hover {
+  color: #FAA237;
+}
+
+.hero {
+  color: white;
+  text-align: center;
+  margin: 165px 50px;
+}
+
+.hero h1 {
+  font-size: 5rem;
+}
+
+.hero p {
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+#About {
+  height: 100%;
+  width: 100%;
+  background: white;
+  text-align: center;
+  background-image: url(/img/stock-img/construction01_about_us_background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#About button {
+  font-weight: 700;
+  text-transform: capitalize;
+  width: 131px;
+  height: 43px;
+  margin: 25px 0;
+  font-size: 0.9rem;
+  color: black;
+  background-color: #FAA237;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  margin: 0 0 60px 0;
+}
+
+#About button:hover {
+  background-color: black;
+  color: #FAA237;
+  border: none;
+}
+
+#About button:focus {
+  outline: none;
+}
+
+.aboutFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 500px;
+}
+
+.aboutHeading {
+  text-align: left;
+  padding: 20px 50px;
+  width: 350px;
+}
+
+.aboutHeading h2 {
+  font-size: 2.8rem;
+}
+
+.aboutText {
+  text-align: left;
+  padding: 20px 100px;
+  width: 400px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.aboutText p {
+  padding-top: 20px;
+}
+
+#Services {
+  height: 100%;
+  width: 100%;
+  background: black;
+}
+
+#Services button {
+  font-weight: 700;
+  text-transform: capitalize;
+  width: 131px;
+  height: 43px;
+  margin: 25px 0;
+  font-size: 0.9rem;
+  color: white;
+  background-color: #FAA237;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+#Services button:hover {
+  background-color: black;
+  color: #FAA237;
+  border: none;
+}
+
+#Services button:focus {
+  outline: none;
+}
+
+.servicesFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#box1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(121, 120, 120, 0.42))), url(/img/stock-img/kitchen-cabinet.jpg) no-repeat center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(121, 120, 120, 0.42) 100%), url(/img/stock-img/kitchen-cabinet.jpg) no-repeat center;
+  background-size: cover;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+}
+
+#box2 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(121, 120, 120, 0.42))), url(/img/stock-img/bathroom-shower.jpg) no-repeat center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(121, 120, 120, 0.42) 100%), url(/img/stock-img/bathroom-shower.jpg) no-repeat center;
+  background-size: cover;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+#box3 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(121, 120, 120, 0.42))), url(/img/stock-img/floor-tiles.jpg) no-repeat center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(121, 120, 120, 0.42) 100%), url(/img/stock-img/floor-tiles.jpg) no-repeat center;
+  background-size: cover;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.box {
+  padding: 165px 50px;
+  color: white;
+  width: 180px;
+  height: 80px;
+}
+
+.box h3 {
+  font-weight: 600;
+}
+
+.box p {
+  color: white;
+}
+
+#Help {
+  height: 100%;
+  width: 100%;
+  background: #b47b7b;
+}
+
+.helpSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 112px;
+  color: white;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 25px;
+}
+
+.helpSection p {
+  color: white;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.helpButton button {
+  font-weight: 700;
+  text-transform: capitalize;
+  width: 131px;
+  height: 43px;
+  margin: 25px 0;
+  font-size: 0.9rem;
+  color: black;
+  background-color: #FAA237;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+.helpButton button:hover {
+  background-color: black;
+  color: #FAA237;
+  border: none;
+}
+
+.helpButton button:active {
+  outline: none;
+}
+
+#Portfolio {
+  height: 100%;
+  width: 100%;
+  background: white;
+  text-align: center;
+  background-image: url(/img/stock-img/construction01_about_us_background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#Portfolio button {
+  font-weight: 700;
+  text-transform: capitalize;
+  width: 131px;
+  height: 43px;
+  margin: 25px 0;
+  font-size: 0.9rem;
+  color: black;
+  background-color: #FAA237;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+#Portfolio button:hover {
+  background-color: black;
+  color: #FAA237;
+  border: none;
+}
+
+#Portfolio button:focus {
+  outline: none;
+}
+
+.portfolioHeading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px 0;
+}
+
+.portfolioHeading hr {
+  width: 10%;
+}
+
+.gliderContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+}
+
+.gliderContainer img {
+  width: 350px;
+}
+
+.glide__arrow {
+  top: 50%;
+}
+
+#Portfolio .gliderContainer button {
+  width: 40px;
+  height: 40px;
+  margin: 0px -40px;
+  background-color: transparent;
+  color: #FAA237;
+  font-size: 28px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#Portfolio .gliderContainer img {
+  -webkit-transition: .3s;
+  transition: .3s;
+  border-radius: 5px;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.29);
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.29);
+}
+
+#Portfolio .gliderContainer img:hover {
+  opacity: 0.7;
+}
+
+#Contact {
+  height: 100%;
+  width: 100%;
+  background: black;
+  height: 600px;
+  color: white;
+}
+
+.contactContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contactText {
+  padding: 0 50px;
+}
+
+.contactForm {
+  text-align: right;
+  padding: 20px 0 0 20px;
+}
+
+.contactForm button {
+  font-weight: 700;
+  text-transform: capitalize;
+  width: 131px;
+  height: 43px;
+  margin: 25px 0;
+  font-size: 0.9rem;
+  color: black;
+  background-color: #FAA237;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+form input {
+  display: block;
+  width: 555px;
+  height: 50px;
+  margin: 15px 0;
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .helpTitle h2 {
+    font-size: 1.8rem;
+  }
+  .helpText h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .logo a {
+    font-size: 1.1rem;
+  }
+  .menu a {
+    font-size: 0.8rem;
+    font-weight: 550;
+    padding: 20px 14px;
+  }
+  .hero h1 {
+    font-size: 4.2rem;
+  }
+  .hero h3 {
+    font-size: 1.3rem;
+  }
+  .helpTitle h2 {
+    font-size: 1.6rem;
+  }
+  .helpText h3 {
+    font-size: 1.1rem;
+    padding: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .menu a {
+    font-size: 0.8rem;
+    padding: 20px 8px;
+    display: block;
+    padding-bottom: 15px;
+    margin-top: 0;
+    padding-top: 0;
+    font-weight: 500;
+    font-size: 1rem;
+    width: 70px;
+  }
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  .nav {
+    display: block;
+  }
+  .menu {
+    text-align: left;
+    width: 100%;
+    margin: 0 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    width: 20%;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .logo {
+    display: inline-block;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .hero {
+    position: absolute;
+    padding-top: 0px;
+    margin-top: 0;
+    height: 100% !important;
+    top: 230px;
+  }
+  #toggle:checked ~ .menu {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition-duration: 2s;
+            transition-duration: 2s;
+  }
+  #toggle:checked ~ label {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  .helpTitle h2 {
+    font-size: 1.4rem;
+  }
+  .helpText h3 {
+    font-size: 1rem;
+    padding: 0 5px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero h1 {
+    font-size: 4rem;
+  }
+  .hero h3 {
+    font-size: 1.2rem;
+  }
+  .heroContainer {
+    height: 100%;
+  }
+  .helpTitle h2 {
+    font-size: 1.2rem;
+  }
+  .helpText h3 {
+    font-size: .8rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
