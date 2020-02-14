@@ -1,0 +1,78 @@
+#Help {
+  @include section($Dark);
+}
+
+.helpSection {
+  @include flexbox(row);
+  height: 112px;
+  color: $Light;
+  justify-content: space-around;
+  text-align: left;
+  align-items: center;
+  margin: 0px 25px;
+
+  p {
+    color: white;
+    flex-grow: 1;
+  }
+}
+
+.helpButton {
+  button {
+    @include button($Accent, $Light);
+  }
+
+  button:hover {
+    background: $Light-darken;
+  }
+
+  button:active {
+    outline: none;
+  }
+}
+
+
+// @media only screen and (max-width: 1200px) {
+
+//   .helpTitle h2 {
+//     font-size: 1.8rem;
+//   }
+
+//   .helpText h3 {
+//     font-size: 1.3rem;
+//   }
+
+// }
+
+@media only screen and (max-width: 992px) {
+  .helpTitle h2 {
+    // font-size: 1.6rem;
+  }
+
+  .helpText h3 {
+    // font-size: 1.1rem;
+    padding: 0 10px;
+  }
+
+}
+
+// @media only screen and (max-width: 600px) {
+
+//   .helpTitle h2 {
+//     font-size: 1.2rem;
+//   }
+
+//   .helpText h3 {
+//     font-size: 0.8rem;
+//   }
+// }
+
+
+
+
+// @media only screen and (max-width: 400px) {
+
+//   #Help {
+//     display: none;
+//   }
+// }

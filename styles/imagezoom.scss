@@ -43,10 +43,56 @@
 .modal-content {
   margin: auto;
   display: block;
-  width: 80%;
-  // height: 80%;
+  // width: 80%;
+  position: relative;
+  top: 5%;
+  height: 80%;
   //max-width: 75%;
 }
+
+@media only screen and (max-width: 992px) {
+  .modal-content {
+    height: 65%;
+    top: 15%
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .modal-content {
+    height: 55%;
+    top: 20%;
+
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    height: 50%;
+    top: 20%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .modal-content {
+    height: 46%;
+    top: 22%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .modal-content {
+    height: 40%;
+    top: 25%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .modal-content {
+    height: 33%;
+    top: 28%;
+  }
+}
+
 
 /* Caption of Modal Image */
 #caption {
@@ -122,11 +168,4 @@
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px) {
-  .modal-content {
-    width: 100%;
-  }
 }

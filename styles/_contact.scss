@@ -1,0 +1,393 @@
+//contact section full size
+
+#Contact {
+  @include section(#242525);
+  height: 100%;
+  color: $Light;
+  width: 100%;
+  padding: 60px 0;
+
+  // h1 {
+  //   font-size: 3.9rem;
+  // }
+}
+
+.contactContainer {
+  @include flexbox(row);
+  height: 100%;
+  // align-items: center;
+  justify-content: space-around;
+  // padding: 10px 20px;
+  // flex-wrap: wrap;
+}
+
+.contactText {
+  // padding: 40px 40px;
+  @include flexbox(column);
+  justify-content: space-evenly;
+
+  .contactTitle {
+    // padding-bottom: 40px;
+    color: $Light;
+  }
+
+  .callNow a {
+    color: $Light;
+  }
+
+  .address {
+    // padding: 15px 0;
+
+    span {
+      color: $Light;
+    }
+  }
+}
+
+.contactForm {
+  // text-align: right;
+  // padding: 40px 40px;
+
+  button {
+    @include button($Accent, $Light);
+    width: 430px;
+    margin: 10px 0;
+  }
+
+  button:hover {
+    background-color: $Light-darken;
+  }
+}
+
+form input {
+  display: block;
+  width: 430px;
+  height: 40px;
+  margin: 13px 0;
+  // font-size: 28px;
+  border-radius: 5px;
+  border: none;
+  background-color: $Light;
+  color: $Dark; // border: 1px solid $Accent;
+  font-size: 20px;
+}
+
+textarea {
+  display: block;
+  width: 430px;
+  margin: 13px 0;
+  // font-size: 28px;
+  border-radius: 5px;
+  border: none;
+  background-color: $Light;
+  color: $Dark; // border: 1px solid $Accent;
+  resize: none;
+  font-size: 20px;
+  height: 9rem;
+}
+
+form input::placeholder,
+textarea::placeholder {
+  // font-size: 18px;
+  padding: 5px 8px;
+  color: $bodyGrey;
+}
+
+//media queries
+
+@media only screen and (max-width: 1200px) {
+  // #Contact {
+  //   h1 {
+  //     font-size: 3.6rem;
+  //   }
+  // }
+
+  .contactForm {
+    input {
+      width: 25rem;
+      height: 2.3rem;
+      // font-size: 18px;
+    }
+
+    textarea {
+      width: 25rem;
+    }
+
+    input::placeholder {
+      // font-size: 1rem;
+      margin: 0;
+      padding: 0 5px;
+    }
+
+    button {
+      width: 25rem;
+      margin: 5px 0 20px 0;
+      height: 2.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  // #Contact {
+  //   h1 {
+  //     font-size: 3.2rem;
+  //   }
+  // }
+
+  .contactForm {
+    input {
+      width: 20rem;
+      height: 2.3rem;
+      // font-size: 18px;
+    }
+
+    textarea {
+      width: 20rem;
+    }
+
+    input::placeholder {
+      // font-size: 1rem;
+      margin: 0;
+      padding: 0 5px;
+    }
+
+    button {
+      width: 20rem;
+      margin: 5px 0 20px 0;
+      height: 2.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  // #Contact {
+  //   h1 {
+  //     font-size: 2.6rem;
+  //   }
+
+  //   h3 {
+  //     font-size: 1.2rem;
+  //   }
+
+  //   h5 {
+  //     font-size: 0.75rem;
+  //   }
+  // }
+
+  .contactForm {
+    input {
+      width: 17rem;
+      height: 2rem;
+      // font-size: 18px;
+    }
+
+    textarea {
+      width: 17rem;
+    }
+
+    input::placeholder {
+      // font-size: 1rem;
+      margin: 0;
+      padding: 0 5px;
+    }
+
+    button {
+      width: 17rem;
+      margin: 5px 0 20px 0;
+      height: 2.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #Contact .contactContainer {
+    // h1 {
+    //   font-size: 3.3rem;
+    // }
+
+    // h3 {
+    //   font-size: 1.2rem;
+    // }
+
+    // h5 {
+    //   font-size: 0.9rem;
+    // }
+
+    padding: 45px 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contactForm {
+    padding-top: 40px;
+
+    input {
+      width: 25rem;
+      height: 2.6rem;
+      // font-size: 16px;
+    }
+
+    textarea {
+      width: 25rem;
+      // font-size: 1rem;
+      height: 10rem;
+    }
+
+    button {
+      width: 25rem;
+      // margin: 5px 0 20px 0;
+      height: 2.4rem;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      // font-size: 1rem;
+      padding: 5px 5px;
+    }
+  }
+
+  .contactTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #Contact .contactContainer {
+    // h1 {
+    //   font-size: 2.6rem;
+    // }
+
+    // h3 {
+    //   font-size: 1.1rem;
+    // }
+
+    // h5 {
+    //   font-size: 0.8rem;
+    // }
+
+    padding: 40px 0;
+  }
+
+  .contactForm {
+    // padding: 0 10px;
+
+    input {
+      width: 23rem;
+      height: 2.5rem;
+      // font-size: 14px;
+    }
+
+    textarea {
+      width: 23rem;
+      // font-size: 0.8rem;
+      height: 9rem;
+    }
+
+    button {
+      width: 23rem;
+      // margin: 5px 0 20px 0;
+      height: 2.4rem;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      // font-size: 0.8rem;
+      padding: 4px 4px;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #Contact .contactContainer {
+    // h1 {
+    //   font-size: 2.5rem;
+    // }
+
+    // h3 {
+    //   font-size: 1rem;
+    // }
+
+    // h5 {
+    //   font-size: 0.7rem;
+    // }
+
+    padding: 40px 0;
+  }
+
+  .contactForm {
+    // padding: 0 10px;
+
+    input {
+      width: 21rem;
+      height: 2.5rem;
+      // font-size: 14px;
+    }
+
+    textarea {
+      width: 21rem;
+      // font-size: 0.7rem;
+      height: 9rem;
+    }
+
+    button {
+      width: 21rem;
+      // margin: 5px 0 20px 0;
+      height: 2.4rem;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      // font-size: 0.7rem;
+      padding: 4px 4px;
+    }
+  }
+}
+
+@media only screen and (max-width: 326px) {
+  #Contact .contactContainer {
+    // h1 {
+    //   font-size: 2.4rem;
+    // }
+
+    // h3 {
+    //   font-size: 0.9rem;
+    // }
+
+    // h5 {
+    //   font-size: 0.6rem;
+    // }
+
+    padding: 40px 0;
+  }
+
+  .contactForm {
+    // padding: 0 10px;
+
+    input {
+      width: 18rem;
+      height: 2.3rem;
+      // font-size: 14px;
+    }
+
+    textarea {
+      width: 18rem;
+      // font-size: 0.8rem;
+      height: 9rem;
+    }
+
+    button {
+      width: 18rem;
+      // margin: 5px 0 20px 0;
+      height: 2.4rem;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      // font-size: 0.6rem;
+      padding: 4px 4px;
+    }
+  }
+}

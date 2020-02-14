@@ -1,6 +1,22 @@
-$primary : #000000;
-$Accent : #FAA237;
-$bodyGrey : #9A9A9A;
-$Accent3 : #F6F6F6;
+// $Dark : #050505;
+// $Dark-lighten : #262525;
+
+$Dark: #051821;
+$Dark-lighten: #072330;
+
+$Accent: #e81a16;
+$Accent-lighten: #ff514f;
+$Accent-darken: #b51310;
+
+$bodyGrey: rgb(43, 43, 43);
+
+$Light: #f3f3f3;
+$Light-darken: #d0cfcf;
+
+$Accent2: #70798c;
+$Accent2-darken: #44567e;
+
+// $boxShadowLightBg : rgba(50, 50, 50, 0.58);
+// $boxShadowDarkBg : #ebebeb3e;
 
 $Hover: 3px solid $Accent;

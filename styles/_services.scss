@@ -1,0 +1,75 @@
+//SERVICES
+
+// #Services {
+//   @include section($Dark);
+
+//   button {
+//     @include button(white, $Accent);
+//   }
+
+//   button:hover {
+//     background-color: $Accent;
+//     color: $Light;
+//     border: none;
+//   }
+
+//   button:focus {
+//     outline: none;
+//   }
+// }
+
+.servicesFlex {
+  @include flexbox(row);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#box1 {
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(121, 120, 120, 0.42) 100%),
+    url(/img/stock-img/kitchen-cabinet.jpg) no-repeat center;
+  background-size: cover;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+#box2 {
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(121, 120, 120, 0.42) 100%),
+    url(/img/stock-img/bathroom-shower.jpg) no-repeat center;
+  background-size: cover;
+  flex-grow: 1;
+}
+
+#box3 {
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(121, 120, 120, 0.42) 100%),
+    url(/img/stock-img/floor-tiles.jpg) no-repeat center;
+  background-size: cover;
+  flex-grow: 1;
+}
+
+.box {
+  padding: 165px 50px;
+  color: White;
+  width: 180px;
+  height: 80px;
+
+  h3 {
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: $Light;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  // .box p {
+  //   font-size: .9rem;
+  // }
+}
