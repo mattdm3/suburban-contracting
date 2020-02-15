@@ -93,12 +93,11 @@ let initialTop = 0;
 let mobileMenuHide = function () {
 
   let newTop = pageYOffset;
-  console.log(newTop);
 
   if (window.innerWidth <= 768 && newTop > initialTop) {
     console.log("scrolling down")
     initialTop = newTop;
-    navbar.style.transitionDuration = ".2s";
+    navbar.style.transitionDuration = ".4s";
     navbar.style.opacity = "0";
     navbar.style.transform = "translate(0, -80px)";
   } else if (window.innerWidth <= 768 && newTop < initialTop) {
