@@ -472,9 +472,16 @@ textarea::placeholder {
   font-family: "Open Sans";
   letter-spacing: .01rem;
   font-size: .9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
 }
 
-.topHeader .topContent a {
+.topHeader .topContent a, .topHeader .topContent p {
   color: #e81a16;
 }
 
@@ -557,6 +564,7 @@ label {
   top: 38px;
   -webkit-transition-duration: .2s;
           transition-duration: .2s;
+  z-index: 3;
 }
 
 .nav a {
@@ -684,7 +692,7 @@ label {
     display: block;
     position: fixed;
     top: 35px;
-    z-index: 2;
+    z-index: 3;
     background-color: #f3f3f3;
     -webkit-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.73);
     box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.73);
@@ -969,6 +977,7 @@ ul li {
 a {
   text-decoration: none;
   color: white;
+  font-size: 1.2rem;
 }
 
 p {
@@ -984,6 +993,7 @@ p {
 h1 {
   font-size: 5.5rem;
   font-family: "Montserrat", sans-serif;
+  line-height: 1;
 }
 
 h2 {
