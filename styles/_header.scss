@@ -172,22 +172,13 @@ label {
   @include flexbox(column);
   justify-content: center;
   height: 100%;
+  
 }
 
 .hero {
   color: white;
   text-align: left;
-  margin: 0 10%;
-
-  // h1 {
-  //   font-size: 6.8rem;
-  // }
-
-  // h3 {
-  //   color: $Light;
-  //   font-size: 1.6rem;
-  // }
-
+  margin: 10% 10%;
 
 }
 
