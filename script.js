@@ -64,7 +64,7 @@ window.addEventListener("scroll", function () {
 });
 
 
-//REMOVE MENU DROPBOWN ON SCROLL (need to ffix!!!) try adding more if statements (if the toggle is rotated) and when the scroll happens the toggle should be "checked"
+//REMOVE MENU DROPBOWN ON SCROLL 
 
 
 

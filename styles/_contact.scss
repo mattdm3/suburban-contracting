@@ -2,10 +2,8 @@
 
 #Contact {
   @include section(#242525);
-  height: 100%;
   color: $Light;
-  width: 100%;
-  padding: 60px 0;
+  padding: 40px 0;
 
   // h1 {
   //   font-size: 3.9rem;
@@ -15,7 +13,7 @@
 .contactContainer {
   @include flexbox(row);
   height: 100%;
-  // align-items: center;
+  align-items: center;
   justify-content: space-around;
   // padding: 10px 20px;
   // flex-wrap: wrap;
@@ -24,10 +22,12 @@
 .contactText {
   // padding: 40px 40px;
   @include flexbox(column);
-  justify-content: space-evenly;
+  justify-content: space-around;
+  align-content: space-around;
+  height: 300px;
+  max-width: 420px;
 
   .contactTitle {
-    // padding-bottom: 40px;
     color: $Light;
   }
 
@@ -36,7 +36,6 @@
   }
 
   .address {
-    // padding: 15px 0;
 
     span {
       color: $Light;
@@ -45,12 +44,11 @@
 }
 
 .contactForm {
-  // text-align: right;
-  // padding: 40px 40px;
+  padding: 40px 0;
 
   button {
     @include button($Accent, $Light);
-    width: 430px;
+    width: 448px;
     margin: 10px 0;
   }
 
@@ -70,6 +68,7 @@ form input {
   background-color: $Light;
   color: $Dark; // border: 1px solid $Accent;
   font-size: 20px;
+  padding: 5px 8px;
 }
 
 textarea {
@@ -84,6 +83,7 @@ textarea {
   resize: none;
   font-size: 20px;
   height: 9rem;
+  padding: 5px 8px;
 }
 
 form input::placeholder,
@@ -96,25 +96,20 @@ textarea::placeholder {
 //media queries
 
 @media only screen and (max-width: 1200px) {
-  // #Contact {
-  //   h1 {
-  //     font-size: 3.6rem;
-  //   }
-  // }
+  
 
   .contactForm {
     input {
-      width: 25rem;
+      width: 24rem;
       height: 2.3rem;
       // font-size: 18px;
     }
 
     textarea {
-      width: 25rem;
+      width: 24rem;
     }
 
     input::placeholder {
-      // font-size: 1rem;
       margin: 0;
       padding: 0 5px;
     }
@@ -128,21 +123,17 @@ textarea::placeholder {
 }
 
 @media only screen and (max-width: 992px) {
-  // #Contact {
-  //   h1 {
-  //     font-size: 3.2rem;
-  //   }
-  // }
 
   .contactForm {
     input {
       width: 20rem;
       height: 2.3rem;
-      // font-size: 18px;
+      font-size: 1rem;
     }
 
     textarea {
       width: 20rem;
+      font-size: 1rem;
     }
 
     input::placeholder {
@@ -152,7 +143,7 @@ textarea::placeholder {
     }
 
     button {
-      width: 20rem;
+      width: 21rem;
       margin: 5px 0 20px 0;
       height: 2.5rem;
     }
@@ -160,29 +151,26 @@ textarea::placeholder {
 }
 
 @media only screen and (max-width: 768px) {
-  // #Contact {
-  //   h1 {
-  //     font-size: 2.6rem;
-  //   }
+  .contactContainer {
+    flex-direction: column;
+    text-align: center;
+    hr {
+      margin: 10px auto;
+      text-align: center;
+    }
+  }
 
-  //   h3 {
-  //     font-size: 1.2rem;
-  //   }
-
-  //   h5 {
-  //     font-size: 0.75rem;
-  //   }
-  // }
+  
 
   .contactForm {
     input {
-      width: 17rem;
+      width: 25rem;
       height: 2rem;
       // font-size: 18px;
     }
 
     textarea {
-      width: 17rem;
+      width: 25rem;
     }
 
     input::placeholder {
@@ -192,35 +180,16 @@ textarea::placeholder {
     }
 
     button {
-      width: 17rem;
+      width: 26rem;
       margin: 5px 0 20px 0;
       height: 2.5rem;
     }
   }
 }
 
-@media only screen and (max-width: 600px) {
-  #Contact .contactContainer {
-    // h1 {
-    //   font-size: 3.3rem;
-    // }
-
-    // h3 {
-    //   font-size: 1.2rem;
-    // }
-
-    // h5 {
-    //   font-size: 0.9rem;
-    // }
-
-    padding: 45px 0;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
+@media only screen and (max-width: 576px) {
   .contactForm {
-    padding-top: 40px;
+    
 
     input {
       width: 25rem;
@@ -235,7 +204,7 @@ textarea::placeholder {
     }
 
     button {
-      width: 25rem;
+      width: 26rem;
       // margin: 5px 0 20px 0;
       height: 2.4rem;
     }
@@ -251,143 +220,5 @@ textarea::placeholder {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  #Contact .contactContainer {
-    // h1 {
-    //   font-size: 2.6rem;
-    // }
-
-    // h3 {
-    //   font-size: 1.1rem;
-    // }
-
-    // h5 {
-    //   font-size: 0.8rem;
-    // }
-
-    padding: 40px 0;
-  }
-
-  .contactForm {
-    // padding: 0 10px;
-
-    input {
-      width: 23rem;
-      height: 2.5rem;
-      // font-size: 14px;
-    }
-
-    textarea {
-      width: 23rem;
-      // font-size: 0.8rem;
-      height: 9rem;
-    }
-
-    button {
-      width: 23rem;
-      // margin: 5px 0 20px 0;
-      height: 2.4rem;
-    }
-
-    input::placeholder,
-    textarea::placeholder {
-      // font-size: 0.8rem;
-      padding: 4px 4px;
-    }
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  #Contact .contactContainer {
-    // h1 {
-    //   font-size: 2.5rem;
-    // }
-
-    // h3 {
-    //   font-size: 1rem;
-    // }
-
-    // h5 {
-    //   font-size: 0.7rem;
-    // }
-
-    padding: 40px 0;
-  }
-
-  .contactForm {
-    // padding: 0 10px;
-
-    input {
-      width: 21rem;
-      height: 2.5rem;
-      // font-size: 14px;
-    }
-
-    textarea {
-      width: 21rem;
-      // font-size: 0.7rem;
-      height: 9rem;
-    }
-
-    button {
-      width: 21rem;
-      // margin: 5px 0 20px 0;
-      height: 2.4rem;
-    }
-
-    input::placeholder,
-    textarea::placeholder {
-      // font-size: 0.7rem;
-      padding: 4px 4px;
-    }
-  }
-}
-
-@media only screen and (max-width: 326px) {
-  #Contact .contactContainer {
-    // h1 {
-    //   font-size: 2.4rem;
-    // }
-
-    // h3 {
-    //   font-size: 0.9rem;
-    // }
-
-    // h5 {
-    //   font-size: 0.6rem;
-    // }
-
-    padding: 40px 0;
-  }
-
-  .contactForm {
-    // padding: 0 10px;
-
-    input {
-      width: 18rem;
-      height: 2.3rem;
-      // font-size: 14px;
-    }
-
-    textarea {
-      width: 18rem;
-      // font-size: 0.8rem;
-      height: 9rem;
-    }
-
-    button {
-      width: 18rem;
-      // margin: 5px 0 20px 0;
-      height: 2.4rem;
-    }
-
-    input::placeholder,
-    textarea::placeholder {
-      // font-size: 0.6rem;
-      padding: 4px 4px;
-    }
   }
 }

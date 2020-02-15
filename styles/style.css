@@ -1,11 +1,8 @@
 #Contact {
   height: 100%;
-  width: 100%;
   background: #242525;
-  height: 100%;
   color: #f3f3f3;
-  width: 100%;
-  padding: 60px 0;
+  padding: 40px 0;
 }
 
 .contactContainer {
@@ -17,6 +14,9 @@
       -ms-flex-direction: row;
           flex-direction: row;
   height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -29,9 +29,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  height: 300px;
+  max-width: 420px;
 }
 
 .contactText .contactTitle {
@@ -46,6 +49,10 @@
   color: #f3f3f3;
 }
 
+.contactForm {
+  padding: 40px 0;
+}
+
 .contactForm button {
   font-weight: 700;
   text-transform: capitalize;
@@ -58,7 +65,7 @@
   border-radius: 3px;
   border: none;
   cursor: pointer;
-  width: 430px;
+  width: 448px;
   margin: 10px 0;
 }
 
@@ -76,6 +83,7 @@ form input {
   background-color: #f3f3f3;
   color: #051821;
   font-size: 20px;
+  padding: 5px 8px;
 }
 
 textarea {
@@ -89,6 +97,7 @@ textarea {
   resize: none;
   font-size: 20px;
   height: 9rem;
+  padding: 5px 8px;
 }
 
 form input::-webkit-input-placeholder,
@@ -117,11 +126,11 @@ textarea::placeholder {
 
 @media only screen and (max-width: 1200px) {
   .contactForm input {
-    width: 25rem;
+    width: 24rem;
     height: 2.3rem;
   }
   .contactForm textarea {
-    width: 25rem;
+    width: 24rem;
   }
   .contactForm input::-webkit-input-placeholder {
     margin: 0;
@@ -150,9 +159,11 @@ textarea::placeholder {
   .contactForm input {
     width: 20rem;
     height: 2.3rem;
+    font-size: 1rem;
   }
   .contactForm textarea {
     width: 20rem;
+    font-size: 1rem;
   }
   .contactForm input::-webkit-input-placeholder {
     margin: 0;
@@ -171,19 +182,30 @@ textarea::placeholder {
     padding: 0 5px;
   }
   .contactForm button {
-    width: 20rem;
+    width: 21rem;
     margin: 5px 0 20px 0;
     height: 2.5rem;
   }
 }
 
 @media only screen and (max-width: 768px) {
+  .contactContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .contactContainer hr {
+    margin: 10px auto;
+    text-align: center;
+  }
   .contactForm input {
-    width: 17rem;
+    width: 25rem;
     height: 2rem;
   }
   .contactForm textarea {
-    width: 17rem;
+    width: 25rem;
   }
   .contactForm input::-webkit-input-placeholder {
     margin: 0;
@@ -202,27 +224,13 @@ textarea::placeholder {
     padding: 0 5px;
   }
   .contactForm button {
-    width: 17rem;
+    width: 26rem;
     margin: 5px 0 20px 0;
     height: 2.5rem;
   }
 }
 
-@media only screen and (max-width: 600px) {
-  #Contact .contactContainer {
-    padding: 45px 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-  }
-  .contactForm {
-    padding-top: 40px;
-  }
+@media only screen and (max-width: 576px) {
   .contactForm input {
     width: 25rem;
     height: 2.6rem;
@@ -232,7 +240,7 @@ textarea::placeholder {
     height: 10rem;
   }
   .contactForm button {
-    width: 25rem;
+    width: 26rem;
     height: 2.4rem;
   }
   .contactForm input::-webkit-input-placeholder,
@@ -265,113 +273,11 @@ textarea::placeholder {
   }
 }
 
-@media only screen and (max-width: 500px) {
-  #Contact .contactContainer {
-    padding: 40px 0;
-  }
-  .contactForm input {
-    width: 23rem;
-    height: 2.5rem;
-  }
-  .contactForm textarea {
-    width: 23rem;
-    height: 9rem;
-  }
-  .contactForm button {
-    width: 23rem;
-    height: 2.4rem;
-  }
-  .contactForm input::-webkit-input-placeholder,
-  .contactForm textarea::-webkit-input-placeholder {
-    padding: 4px 4px;
-  }
-  .contactForm input:-ms-input-placeholder,
-  .contactForm textarea:-ms-input-placeholder {
-    padding: 4px 4px;
-  }
-  .contactForm input::-ms-input-placeholder,
-  .contactForm textarea::-ms-input-placeholder {
-    padding: 4px 4px;
-  }
-  .contactForm input::placeholder,
-  .contactForm textarea::placeholder {
-    padding: 4px 4px;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  #Contact .contactContainer {
-    padding: 40px 0;
-  }
-  .contactForm input {
-    width: 21rem;
-    height: 2.5rem;
-  }
-  .contactForm textarea {
-    width: 21rem;
-    height: 9rem;
-  }
-  .contactForm button {
-    width: 21rem;
-    height: 2.4rem;
-  }
-  .contactForm input::-webkit-input-placeholder,
-  .contactForm textarea::-webkit-input-placeholder {
-    padding: 4px 4px;
-  }
-  .contactForm input:-ms-input-placeholder,
-  .contactForm textarea:-ms-input-placeholder {
-    padding: 4px 4px;
-  }
-  .contactForm input::-ms-input-placeholder,
-  .contactForm textarea::-ms-input-placeholder {
-    padding: 4px 4px;
-  }
-  .contactForm input::placeholder,
-  .contactForm textarea::placeholder {
-    padding: 4px 4px;
-  }
-}
-
-@media only screen and (max-width: 326px) {
-  #Contact .contactContainer {
-    padding: 40px 0;
-  }
-  .contactForm input {
-    width: 18rem;
-    height: 2.3rem;
-  }
-  .contactForm textarea {
-    width: 18rem;
-    height: 9rem;
-  }
-  .contactForm button {
-    width: 18rem;
-    height: 2.4rem;
-  }
-  .contactForm input::-webkit-input-placeholder,
-  .contactForm textarea::-webkit-input-placeholder {
-    padding: 4px 4px;
-  }
-  .contactForm input:-ms-input-placeholder,
-  .contactForm textarea:-ms-input-placeholder {
-    padding: 4px 4px;
-  }
-  .contactForm input::-ms-input-placeholder,
-  .contactForm textarea::-ms-input-placeholder {
-    padding: 4px 4px;
-  }
-  .contactForm input::placeholder,
-  .contactForm textarea::placeholder {
-    padding: 4px 4px;
-  }
-}
-
 #About {
   height: 100%;
-  width: 100%;
   background: white;
   text-align: center;
+  padding: 50px;
   background-image: url(/img/stock-img/construction01_about_us_background.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -395,7 +301,6 @@ textarea::placeholder {
   border-radius: 3px;
   border: none;
   cursor: pointer;
-  margin: 0 0 60px 0;
 }
 
 #About button:hover {
@@ -426,82 +331,43 @@ textarea::placeholder {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  height: 500px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 35vh;
 }
 
 .aboutHeading {
   text-align: left;
-  padding: 20px 50px;
-  width: 350px;
+  max-width: 55%;
 }
 
 .aboutText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-align: left;
-  padding: 20px 100px;
-  width: 300px;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 40%;
 }
 
 .aboutText p {
-  padding-top: 20px;
   color: #2b2b2b;
 }
 
-@media only screen and (max-width: 600px) {
-  .aboutHeading {
-    text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .aboutText {
-    padding: 0 7px;
-    text-align: center;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .aboutHeading {
-    text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .aboutText {
-    padding: 0 25px;
-    text-align: center;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  #About {
-    height: 100%;
-  }
+@media only screen and (max-width: 768px) {
   .aboutFlex {
-    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .aboutHeading {
     text-align: center;
@@ -515,13 +381,11 @@ textarea::placeholder {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-top: 70px;
+    max-width: 80%;
   }
   .aboutText {
-    padding: 5px 35px;
     text-align: center;
-    margin-bottom: 40px;
-    padding-bottom: 20px;
+    max-width: 80%;
   }
 }
 
@@ -536,8 +400,6 @@ textarea::placeholder {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 #box1 {
@@ -570,25 +432,36 @@ textarea::placeholder {
 }
 
 .box {
-  padding: 165px 50px;
+  padding: 50px 40px;
   color: White;
   width: 180px;
-  height: 80px;
-}
-
-.box h3 {
-  font-weight: 600;
-  text-transform: uppercase;
+  height: 290px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .box p {
   color: #f3f3f3;
 }
 
+@media only screen and (max-width: 992px) {
+  .servicesFlex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .topHeader {
   text-align: right;
   background-color: black;
-  height: 38px;
   opacity: .9;
   color: #e81a16;
   display: -webkit-box;
@@ -603,6 +476,8 @@ textarea::placeholder {
           justify-content: flex-end;
   margin: 0px;
   position: fixed;
+  left: 0;
+  padding: 3px;
   width: 100%;
   z-index: 1000;
 }
@@ -691,12 +566,13 @@ label {
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: #2b2b2b;
-  position: fixed;
   width: 100%;
   max-height: 65px;
   z-index: 10;
-  position: absolute;
+  position: fixed;
   top: 38px;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
 }
 
 .nav a {
@@ -704,7 +580,10 @@ label {
 }
 
 .nav-scrolled {
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
   background-color: #f3f3f3;
+  color: red;
   position: fixed;
   top: 37px;
   -webkit-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.73);
@@ -720,7 +599,6 @@ label {
 }
 
 .logo {
-  font-size: 1.2rem;
   font-weight: 800;
   padding: 20px 30px;
 }
@@ -736,7 +614,6 @@ label {
 
 .menu {
   font-weight: 500;
-  font-size: 1.1rem;
   z-index: 0;
   padding: 20px 30px;
 }
@@ -773,32 +650,6 @@ label {
   margin: 0 10%;
 }
 
-@media only screen and (max-width: 1200px) {
-  .hero h1 {
-    font-size: 9rem;
-  }
-  .hero .menu a {
-    font-size: 1rem;
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  .logo a {
-    font-size: 1.1rem;
-  }
-  .menu a {
-    font-size: 1rem;
-    font-weight: 550;
-    padding: 20px 14px;
-  }
-  .hero h1 {
-    font-size: 4.2rem;
-  }
-  .hero h3 {
-    font-size: 1.3rem;
-  }
-}
-
 @media only screen and (max-width: 768px) {
   .topHeader {
     z-index: 1000;
@@ -832,12 +683,10 @@ label {
             justify-content: center;
   }
   .menu a {
-    font-size: 0.8rem;
     padding: 25px 8px;
     margin-top: 0;
     padding-top: 0;
     font-weight: 500;
-    font-size: 1rem;
     text-align: center;
   }
   label {
@@ -879,6 +728,7 @@ label {
     display: inline-block;
     padding-bottom: 0;
     margin-bottom: 0;
+    padding: 24px 30px;
     color: #051821;
   }
   .hero {
@@ -902,116 +752,23 @@ label {
   }
 }
 
-@media only screen and (max-width: 768px) and (max-width: 600px) {
-  .hero h1 {
-    font-size: 3.2rem;
-  }
-  .hero h3 {
-    font-size: 1.2rem;
-  }
-}
-
 @media only screen and (max-width: 768px) and (max-width: 500px) {
   #Home {
     height: 80vh;
   }
-}
-
-@media only screen and (max-width: 768px) and (max-width: 400px) {
-  .logo a {
-    font-size: 0.9rem;
-  }
-  label {
-    margin: 0;
-    padding: 0;
-    position: relative;
-    right: 50px;
-  }
-  .hero {
-    text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 0 10px;
-  }
-  .hero h1 {
-    font-size: 2.7rem;
-  }
-  .hero h3 {
-    font-size: 1rem;
+  .logo {
+    padding-top: 25px;
   }
 }
 
 #Help {
   height: 100%;
-  width: 100%;
   background: #051821;
-}
-
-.helpSection {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  height: 112px;
-  color: #f3f3f3;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  text-align: left;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0px 25px;
-}
-
-.helpSection p {
-  color: white;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-
-.helpButton button {
-  font-weight: 700;
-  text-transform: capitalize;
-  width: 138px;
-  height: 48px;
-  margin: 25px 0;
-  font-size: 0.9rem;
-  color: #e81a16;
-  background-color: #f3f3f3;
-  border-radius: 3px;
-  border: none;
-  cursor: pointer;
-}
-
-.helpButton button:hover {
-  background: #d0cfcf;
-}
-
-.helpButton button:active {
-  outline: none;
-}
-
-@media only screen and (max-width: 992px) {
-  .helpText h3 {
-    padding: 0 10px;
-  }
+  display: none;
 }
 
 #Portfolio {
   height: 100%;
-  width: 100%;
   background: white;
   padding: 40px 0;
   text-align: center;
@@ -1096,6 +853,8 @@ label {
 
 .glide__arrow {
   top: 50%;
+  color: white !important;
+  background: #24252556 !important;
 }
 
 #Portfolio .gliderContainer button {
@@ -1205,7 +964,7 @@ label {
 }
 
 html {
-  font-size: 16px;
+  font-size: 13px;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -1231,6 +990,7 @@ a {
 p {
   font-weight: 200;
   color: #2b2b2b;
+  font-size: 1.1rem;
 }
 
 .uppercase {
@@ -1238,12 +998,12 @@ p {
 }
 
 h1 {
-  font-size: 6.4rem;
+  font-size: 5.9rem;
   font-family: "Montserrat", sans-serif;
 }
 
 h2 {
-  font-size: 3.5rem;
+  font-size: 3.4rem;
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
 }
@@ -1255,7 +1015,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 200;
 }
 
@@ -1297,5 +1057,29 @@ button:focus {
   opacity: 1;
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
+}
+
+@media only screen and (min-width: 576px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  html {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 15px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

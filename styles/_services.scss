@@ -1,27 +1,9 @@
 //SERVICES
 
-// #Services {
-//   @include section($Dark);
-
-//   button {
-//     @include button(white, $Accent);
-//   }
-
-//   button:hover {
-//     background-color: $Accent;
-//     color: $Light;
-//     border: none;
-//   }
-
-//   button:focus {
-//     outline: none;
-//   }
-// }
 
 .servicesFlex {
   @include flexbox(row);
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 #box1 {
@@ -53,15 +35,14 @@
 }
 
 .box {
-  padding: 165px 50px;
+  padding: 50px 40px;
   color: White;
   width: 180px;
-  height: 80px;
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 
-  h3 {
-    font-weight: 600;
-    text-transform: uppercase;
-  }
 
   p {
     color: $Light;
@@ -69,7 +50,7 @@
 }
 
 @media only screen and (max-width: 992px) {
-  // .box p {
-  //   font-size: .9rem;
-  // }
+  .servicesFlex {
+    flex-wrap: wrap;
+  }
 }

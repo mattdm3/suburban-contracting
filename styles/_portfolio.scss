@@ -22,9 +22,7 @@
     outline: none;
   }
 
-  // #servicesButton {
-  //   margin-top: 100px;
-  // }
+  
 }
 
 .portfolioHeading {
@@ -46,7 +44,7 @@
 }
 
 .gliderContainer {
-  // height: 100vh;
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,16 +62,11 @@
 .glide__arrow {
   // top: 115%;
   top: 50%;
+  color: white !important;
+  background: #24252556 !important;
 }
 
-// .glide * {
-//   height: 280px;
-// }
 
-// #arrowLeft {
-//
-
-// }
 
 #Portfolio .gliderContainer button {
   // width: 40px;

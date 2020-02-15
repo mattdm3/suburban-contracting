@@ -1,60 +1,48 @@
 #Help {
   @include section($Dark);
+  display: none;
 }
 
-.helpSection {
-  @include flexbox(row);
-  height: 112px;
-  color: $Light;
-  justify-content: space-around;
-  text-align: left;
-  align-items: center;
-  margin: 0px 25px;
+// .helpSection {
+//   @include flexbox(row);
+//   height: 112px;
+//   color: $Light;
+//   justify-content: space-around;
+//   text-align: left;
+//   align-items: center;
+//   margin: 0px 25px;
 
-  p {
-    color: white;
-    flex-grow: 1;
-  }
-}
+//   p {
+//     color: white;
+//     flex-grow: 1;
+//   }
+// }
 
-.helpButton {
-  button {
-    @include button($Accent, $Light);
-  }
-
-  button:hover {
-    background: $Light-darken;
-  }
-
-  button:active {
-    outline: none;
-  }
-}
-
-
-// @media only screen and (max-width: 1200px) {
-
-//   .helpTitle h2 {
-//     font-size: 1.8rem;
+// .helpButton {
+//   button {
+//     @include button($Accent, $Light);
 //   }
 
+//   button:hover {
+//     background: $Light-darken;
+//   }
+
+//   button:active {
+//     outline: none;
+//   }
+// }
+
+
+
+// @media only screen and (max-width: 992px) {
+  
+
 //   .helpText h3 {
-//     font-size: 1.3rem;
+//     // font-size: 1.1rem;
+//     padding: 0 10px;
 //   }
 
 // }
-
-@media only screen and (max-width: 992px) {
-  .helpTitle h2 {
-    // font-size: 1.6rem;
-  }
-
-  .helpText h3 {
-    // font-size: 1.1rem;
-    padding: 0 10px;
-  }
-
-}
 
 // @media only screen and (max-width: 600px) {
 

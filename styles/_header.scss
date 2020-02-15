@@ -4,13 +4,15 @@
 .topHeader {
   text-align: right;
   background-color: black;
-  height: 38px;
+  // height: 38px;
   opacity: .9;
   color: $Accent;
   @include flexbox(row);
   justify-content: flex-end;
   margin: 0px;
   position: fixed;
+  left:0;
+  padding: 3px;
   width: 100%;
   z-index: 1000;
 
@@ -90,12 +92,14 @@ label {
   @include flexbox(row);
   justify-content: space-between;
   color: $bodyGrey;
-  position: fixed;
   width: 100%;
   max-height: 65px;
   z-index: 10;
-  position: absolute;
+  position: fixed;
   top: 38px;
+  transition-duration: .2s;
+  
+
 
   a {
     color: $Light;
@@ -106,7 +110,10 @@ label {
 
 
 .nav-scrolled {
+
+  transition-duration: .2s;
   background-color: $Light;
+  color: red;
   position: fixed;
   top: 37px;
   // margin-top: -35px;
@@ -124,7 +131,7 @@ label {
 }
 
 .logo {
-  font-size: 1.2rem;
+  // font-size: 1.2rem;
   font-weight: 800;
   padding: 20px 30px;
 
@@ -142,7 +149,7 @@ label {
 
 .menu {
   font-weight: 500;
-  font-size: 1.1rem;
+  // font-size: 1.1rem;
   z-index: 0;
   padding: 20px 30px;
 
@@ -185,40 +192,8 @@ label {
 }
 
 
-@media only screen and (max-width: 1200px) {
-  .hero {
-    h1 {
-    font-size: 9rem;
-  }
 
-  .menu a {
-    font-size: 1rem;
-  }
-}
-}
 
-@media only screen and (max-width: 992px) {
-  .logo a {
-    font-size: 1.1rem;
-  }
-
-  .menu a {
-    font-size: 1rem;
-    font-weight: 550;
-    padding: 20px 14px;
-  }
-
-  .hero {
-    h1 {
-      font-size: 4.2rem;
-    }
-
-    h3 {
-      font-size: 1.3rem;
-    }
-  }
-
-}
 
 @media only screen and (max-width: 768px) {
   // .topHeader {
@@ -257,14 +232,14 @@ label {
 
 
   .menu a {
-    font-size: 0.8rem;
+    // font-size: 0.8rem;
     padding: 25px 8px;
     // display: block;
     // padding-bottom: 15px;
     margin-top: 0;
     padding-top: 0;
     font-weight: 500;
-    font-size: 1rem;
+    // font-size: 1rem;
     text-align: center;
     // width: 70px;
     // z-index: 5000;
@@ -324,6 +299,7 @@ label {
     display: inline-block;
     padding-bottom: 0;
     margin-bottom: 0;
+    padding: 24px 30px;
     color: $Dark;
   }
 
@@ -355,50 +331,14 @@ label {
 
 
 
-
-@media only screen and (max-width: 600px) {
-  .hero h1 {
-    font-size: 3.2rem;
-  }
-
-  .hero h3 {
-    font-size: 1.2rem;
-  }
-
-}
-
 @media only screen and (max-width: 500px) {
   #Home {
     height: 80vh;
   }
-}
-
-@media only screen and (max-width: 400px) {
-  .logo a {
-    font-size: 0.9rem;
-  }
-
-  label {
-    margin: 0;
-    padding: 0;
-    position: relative;
-    right: 50px;
-  }
-
-  .hero {
-    text-align: center;
-    @include flexbox(column);
-    align-items: center;
-
-    h1 {
-      font-size: 2.7rem;
-    }
-
-    h3 {
-      font-size: 1rem;
-    }
-
-    padding: 0 10px;
+  .logo {
+    padding-top: 25px;
   }
 }
+
+
 }
