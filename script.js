@@ -64,31 +64,49 @@ window.addEventListener("scroll", function () {
 });
 
 
-//REMOVE MENU DROPBOWN ON SCROLL 
+//HIDE NAVBAR ON SCROLL DOWN and reappear on scroll up (only works on desktop)
 
 
 
-let menuHover = function () {
-  let firstPosY = event.deltaY;
-  let newPosY = firstPosY + event.deltaY;
-  if (window.innerWidth <= 768 && firstPosY < newPosY) {
-    scrollingDown = true;
+// let menuHover = function () {
+//   let firstPosY = event.deltaY;
+//   let newPosY = firstPosY + event.deltaY;
+//   if (window.innerWidth <= 768 && firstPosY < newPosY) {
 
+//     navbar.style.transitionDuration = ".2s";
+//     navbar.style.opacity = "0";
+//     navbar.style.transform = "translate(0, -80px)";
+
+//   } else if (window.innerWidth <= 768 && firstPosY > newPosY) {
+//     navbar.style.opacity = "1";
+//     navbar.style.transform = "translate(0, 0px)";
+
+//   }
+
+// }
+
+
+// SECOND TRY with inner width! 
+
+let initialTop = 0;
+
+let mobileMenuHide = function () {
+
+  let newTop = pageYOffset;
+  console.log(newTop);
+
+  if (window.innerWidth <= 768 && newTop > initialTop) {
+    console.log("scrolling down")
+    initialTop = newTop;
     navbar.style.transitionDuration = ".2s";
     navbar.style.opacity = "0";
     navbar.style.transform = "translate(0, -80px)";
-
-  } else if (firstPosY > newPosY) {
+  } else if (window.innerWidth <= 768 && newTop < initialTop) {
+    console.log("scrolling up");
     navbar.style.opacity = "1";
     navbar.style.transform = "translate(0, 0px)";
-
   }
-
-
-
-
 }
-
 
 
 
@@ -173,4 +191,5 @@ menu.children[0].addEventListener("click", function () {
 
 //smooth scroll js
 
-window.addEventListener("mousewheel", menuHover);
+// window.addEventListener("mousewheel", menuHover);
+window.addEventListener("scroll", mobileMenuHide);
