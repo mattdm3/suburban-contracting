@@ -170,7 +170,7 @@ label {
 
 .heroContainer {
   @include flexbox(column);
-  justify-content: center;
+  justify-content: flex-end;
   height: 100%;
   
 }
