@@ -89,7 +89,7 @@ textarea {
 form input::placeholder,
 textarea::placeholder {
   // font-size: 18px;
-  padding: 5px 8px;
+  // padding: 5px 8px;
   color: $bodyGrey;
 }
 
@@ -139,7 +139,7 @@ textarea::placeholder {
     input::placeholder {
       // font-size: 1rem;
       margin: 0;
-      padding: 0 5px;
+      // padding: 0 5px;
     }
 
     button {
@@ -176,7 +176,7 @@ textarea::placeholder {
     input::placeholder {
       // font-size: 1rem;
       margin: 0;
-      padding: 0 5px;
+      // padding: 0 5px;
     }
 
     button {
@@ -209,10 +209,14 @@ textarea::placeholder {
       height: 2.4rem;
     }
 
-    input::placeholder,
+    // input::placeholder,
+    // textarea::placeholder {
+    //   // font-size: 1rem;
+    //   // padding: 5px 5px;
+    // }
+
     textarea::placeholder {
-      // font-size: 1rem;
-      padding: 5px 5px;
+      padding: 0 5px;
     }
   }
 

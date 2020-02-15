@@ -102,25 +102,21 @@ textarea {
 
 form input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-  padding: 5px 8px;
   color: #2b2b2b;
 }
 
 form input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
-  padding: 5px 8px;
   color: #2b2b2b;
 }
 
 form input::-ms-input-placeholder,
 textarea::-ms-input-placeholder {
-  padding: 5px 8px;
   color: #2b2b2b;
 }
 
 form input::placeholder,
 textarea::placeholder {
-  padding: 5px 8px;
   color: #2b2b2b;
 }
 
@@ -167,19 +163,15 @@ textarea::placeholder {
   }
   .contactForm input::-webkit-input-placeholder {
     margin: 0;
-    padding: 0 5px;
   }
   .contactForm input:-ms-input-placeholder {
     margin: 0;
-    padding: 0 5px;
   }
   .contactForm input::-ms-input-placeholder {
     margin: 0;
-    padding: 0 5px;
   }
   .contactForm input::placeholder {
     margin: 0;
-    padding: 0 5px;
   }
   .contactForm button {
     width: 21rem;
@@ -209,19 +201,15 @@ textarea::placeholder {
   }
   .contactForm input::-webkit-input-placeholder {
     margin: 0;
-    padding: 0 5px;
   }
   .contactForm input:-ms-input-placeholder {
     margin: 0;
-    padding: 0 5px;
   }
   .contactForm input::-ms-input-placeholder {
     margin: 0;
-    padding: 0 5px;
   }
   .contactForm input::placeholder {
     margin: 0;
-    padding: 0 5px;
   }
   .contactForm button {
     width: 26rem;
@@ -243,21 +231,17 @@ textarea::placeholder {
     width: 26rem;
     height: 2.4rem;
   }
-  .contactForm input::-webkit-input-placeholder,
   .contactForm textarea::-webkit-input-placeholder {
-    padding: 5px 5px;
+    padding: 0 5px;
   }
-  .contactForm input:-ms-input-placeholder,
   .contactForm textarea:-ms-input-placeholder {
-    padding: 5px 5px;
+    padding: 0 5px;
   }
-  .contactForm input::-ms-input-placeholder,
   .contactForm textarea::-ms-input-placeholder {
-    padding: 5px 5px;
+    padding: 0 5px;
   }
-  .contactForm input::placeholder,
   .contactForm textarea::placeholder {
-    padding: 5px 5px;
+    padding: 0 5px;
   }
   .contactTitle {
     display: -webkit-box;
