@@ -19,7 +19,7 @@ const config = {
   focusAt: "center",
   gap: 8,
   keyboard: true,
-  animationDuration: 500,
+  animationDuration: 400,
   animationTimingFunc: "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
   breakpoints: {
     1500: {
