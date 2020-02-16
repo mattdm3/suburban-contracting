@@ -852,6 +852,12 @@ label {
   top: 50%;
   color: white !important;
   background: #24252556 !important;
+  width: 40px !important;
+  border-radius: 0px !important;
+}
+
+.glide__arrow:hover {
+  background: #242525ce !important;
 }
 
 #Portfolio .gliderContainer button {
