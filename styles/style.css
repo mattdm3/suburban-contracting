@@ -489,8 +489,8 @@ textarea::placeholder {
 header {
   height: 90vh;
   width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.473)), to(rgba(0, 0, 0, 0.445))), url(/img/stock-img/full-kitchen.jpg) no-repeat center;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.473) 0%, rgba(0, 0, 0, 0.445) 100%), url(/img/stock-img/full-kitchen.jpg) no-repeat center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.623))), url(/img/stock-img/full-kitchen.jpg) no-repeat center;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.623) 100%), url(/img/stock-img/full-kitchen.jpg) no-repeat center;
   background-size: cover;
 }
 
@@ -570,6 +570,7 @@ label {
 
 .nav a {
   color: #f3f3f3;
+  color: #051821;
 }
 
 .nav-scrolled {
@@ -578,7 +579,7 @@ label {
   background-color: #f3f3f3;
   color: red;
   position: fixed;
-  top: 42px;
+  top: 38px;
   -webkit-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.73);
   box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.73);
 }
@@ -612,8 +613,10 @@ label {
 }
 
 .menu a {
-  padding: 0 10px;
+  padding: 0 5px;
+  margin: 0 5px;
   clear: right;
+  border-bottom: 4px solid transparent;
 }
 
 #about:hover,
@@ -621,6 +624,7 @@ label {
 #portfolio:hover,
 #contact:hover {
   color: #e81a16;
+  border-bottom: 4px solid #e81a16;
 }
 
 .heroContainer {
@@ -661,6 +665,7 @@ label {
         -ms-flex-pack: center;
             justify-content: center;
     z-index: 1;
+    height: 250px;
   }
   .menuFlex {
     display: -webkit-box;
@@ -671,17 +676,15 @@ label {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    width: 70px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+    width: 75px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .menu a {
-    padding: 25px 8px;
-    margin-top: 0;
-    padding-top: 0;
+    margin: 5px 0px;
+    padding: 5px 0;
     font-weight: 500;
     text-align: center;
   }
@@ -712,12 +715,12 @@ label {
     width: 100%;
     visibility: hidden;
     position: relative;
-    top: -250px;
+    top: -380px;
     left: -30px;
     background-color: #f3f3f3;
     z-index: -20;
-    -webkit-transition: .5s all ease;
-    transition: .5s all ease;
+    -webkit-transition: .3s all ease-in-out;
+    transition: .3s all ease-in-out;
     color: #051821;
   }
   .logo {
@@ -739,8 +742,12 @@ label {
     width: 100%;
     margin: 0;
     top: -7px;
-    left: -30px;
     z-index: -10;
+    padding-bottom: 20px;
+  }
+  #toggle:checked ~ .menu a {
+    text-align: center;
+    width: 100%;
   }
   #toggle:checked ~ label {
     -webkit-transform: rotate(-45deg);
