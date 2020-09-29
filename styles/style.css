@@ -894,6 +894,7 @@ label {
   border-radius: 5px;
   cursor: -webkit-zoom-in;
   cursor: zoom-in;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 #Portfolio .gliderContainer img:hover {
