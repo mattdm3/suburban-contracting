@@ -1,17 +1,16 @@
 //HEADER SECTION
 
-
 .topHeader {
   text-align: right;
   background-color: black;
   // height: 38px;
-  opacity: .9;
+  opacity: 0.9;
   color: $Accent;
   @include flexbox(row);
   justify-content: flex-end;
   margin: 0px;
   position: fixed;
-  left:0;
+  left: 0;
   padding: 3px;
   width: 100%;
   z-index: 1000;
@@ -20,31 +19,30 @@
     color: $Accent;
     padding: 8px 15px;
     font-family: "Open Sans";
-    letter-spacing: .01rem;
-    font-size: .8rem;
+    letter-spacing: 0.01rem;
+    font-size: 0.8rem;
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    
 
-    a, p {
+    a,
+    p {
       color: $Accent;
-      font-size: .8rem;
+      font-size: 0.8rem;
     }
-
   }
-
 }
 
 header {
   height: 90vh;
   width: 100%;
-  background: linear-gradient(to bottom,
+  background: linear-gradient(
+      to bottom,
       rgba(255, 255, 255, 0) 0%,
-      rgba(0, 0, 0, 0.623) 100%),
-    url(/img/stock-img/full-kitchen.jpg) no-repeat center;
+      rgba(0, 0, 0, 0.623) 100%
+    ),
+    url(/img/stock-img/full-kitchen-min.jpg) no-repeat center;
   background-size: cover;
-
 
   button {
     @include button($Accent, $Light);
@@ -102,10 +100,8 @@ label {
   z-index: 10;
   position: fixed;
   top: 38px;
-  transition-duration: .2s;
+  transition-duration: 0.2s;
   z-index: 3;
-  
-
 
   a {
     color: $Light;
@@ -113,12 +109,8 @@ label {
   }
 }
 
-
-
-
 .nav-scrolled {
-
-  transition-duration: .2s;
+  transition-duration: 0.2s;
   background-color: $Light;
   color: red;
   position: fixed;
@@ -165,7 +157,6 @@ label {
     margin: 0 5px;
     clear: right;
     border-bottom: 4px solid transparent;
-    
   }
 }
 
@@ -175,7 +166,6 @@ label {
 #contact:hover {
   color: $Accent;
   border-bottom: 4px solid $Accent;
-  
 }
 
 //HERO
@@ -184,46 +174,35 @@ label {
   @include flexbox(column);
   justify-content: flex-end;
   height: 100%;
-  
 }
 
 .hero {
   color: white;
   text-align: left;
   margin: 10% 10%;
-
 }
-
-
-
-
 
 @media only screen and (max-width: 768px) {
   // .topHeader {
   //   display: none;
   // }
 
-    .topHeader {
-      z-index: 1000;
-      position: fixed;
-      width: 100%;
-      opacity: 1;
+  .topHeader {
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    opacity: 1;
 
-      a {
-        font-size: .8rem;
-      }
-      
+    a {
+      font-size: 0.8rem;
     }
+  }
 
   .menu {
     display: flex;
     justify-content: center;
     z-index: 1;
     height: 250px;
-    
-  
-
-
   }
 
   .menuFlex {
@@ -235,12 +214,7 @@ label {
     align-content: space-around;
     width: 75px;
     justify-content: space-around;
-    
-  
-
   }
-
-
 
   .menu a {
     margin: 5px 0px;
@@ -250,7 +224,6 @@ label {
     text-align: center;
     // width: 30px;
     // z-index: 5000;
-
   }
 
   label {
@@ -260,7 +233,6 @@ label {
 
   .nav-scrolled {
     margin: 0;
-
   }
 
   .nav {
@@ -268,7 +240,6 @@ label {
     position: fixed;
     top: 35px;
     z-index: 3;
-
 
     background-color: $Light;
 
@@ -297,9 +268,8 @@ label {
     // top: 20px;
     background-color: $Light;
     z-index: -20;
-    transition: .3s all ease-in-out;
+    transition: 0.3s all ease-in-out;
     color: $Dark;
-  
   }
 
   .logo {
@@ -318,7 +288,7 @@ label {
     color: $Dark;
   }
 
-  #toggle:checked~.menu {
+  #toggle:checked ~ .menu {
     visibility: visible;
     background-color: $Light;
     width: 100%;
@@ -327,33 +297,24 @@ label {
     // left: -30px;
     z-index: -10;
     padding-bottom: 20px;
-    
+
     a {
       text-align: center;
       width: 100%;
     }
-    
-
   }
 
-  #toggle:checked~label {
+  #toggle:checked ~ label {
     transform: rotate(-45deg);
     color: $Dark;
-   
-
   }
 
-
-
-
-@media only screen and (max-width: 500px) {
-  #Home {
-    height: 80vh;
+  @media only screen and (max-width: 500px) {
+    #Home {
+      height: 80vh;
+    }
+    .logo {
+      padding-top: 25px;
+    }
   }
-  .logo {
-    padding-top: 25px;
-  }
-}
-
-
 }
