@@ -38,42 +38,36 @@
     top: 15%;
   }
 }
-
 @media only screen and (max-width: 768px) {
   .modal-content {
     height: 55%;
     top: 20%;
   }
 }
-
 @media only screen and (max-width: 700px) {
   .modal-content {
     height: 50%;
     top: 20%;
   }
 }
-
 @media only screen and (max-width: 600px) {
   .modal-content {
     height: 46%;
     top: 22%;
   }
 }
-
 @media only screen and (max-width: 500px) {
   .modal-content {
     height: 40%;
     top: 25%;
   }
 }
-
 @media only screen and (max-width: 400px) {
   .modal-content {
     height: 33%;
     top: 28%;
   }
 }
-
 /* Caption of Modal Image */
 #caption {
   margin: auto;
@@ -98,8 +92,8 @@
 .out {
   -webkit-animation-name: zoom-out;
           animation-name: zoom-out;
-  -webkit-animation-duration: .8s;
-          animation-duration: .8s;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
 }
 
 @-webkit-keyframes zoom {
@@ -110,38 +104,32 @@
     -webkit-transform: scale(1);
   }
 }
-
 @keyframes zoom {
   from {
-    -webkit-transform: translate(0px, 20px);
-            transform: translate(0px, 20px);
-    opacity: .7;
+    transform: translate(0px, 20px);
+    opacity: 0.7;
   }
   to {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
+    transform: translate(0, 0);
     opacity: 1;
   }
 }
-
 @-webkit-keyframes zoom-out {
   from {
     opacity: 1;
   }
   to {
-    opacity: .6;
+    opacity: 0.6;
   }
 }
-
 @keyframes zoom-out {
   from {
     opacity: 1;
   }
   to {
-    opacity: .6;
+    opacity: 0.6;
   }
 }
-
 /* The Close Button */
 .close {
   position: absolute;
@@ -150,7 +138,6 @@
   color: #f1f1f1;
   font-size: 40px;
   font-weight: bold;
-  -webkit-transition: 1s;
   transition: 1s;
 }
 
@@ -159,5 +146,4 @@
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
-}
-/*# sourceMappingURL=imagezoom.css.map */
+}/*# sourceMappingURL=imagezoom.css.map */
