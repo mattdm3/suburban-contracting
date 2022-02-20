@@ -23,22 +23,22 @@ const config = {
   animationTimingFunc: "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
   breakpoints: {
     1500: {
-      perView: 3
+      perView: 3,
     },
     1200: {
       perView: 2,
-      focusAt: 0
+      focusAt: 0,
     },
     810: {
       perView: 1,
-      focusAt: "center"
+      focusAt: "center",
     },
     400: {
       perView: 1,
       focusAt: 0,
-      gap: 15
-    }
-  }
+      gap: 15,
+    },
+  },
 };
 new Glide(".glide", config).mount();
 
@@ -63,10 +63,7 @@ window.addEventListener("scroll", function () {
   }
 });
 
-
 //HIDE NAVBAR ON SCROLL DOWN and reappear on scroll up (only works on desktop)
-
-
 
 // let menuHover = function () {
 //   let firstPosY = event.deltaY;
@@ -85,13 +82,11 @@ window.addEventListener("scroll", function () {
 
 // }
 
-
-// SECOND TRY with inner width! 
+// SECOND TRY with inner width!
 
 let initialTop = 0;
 
 let mobileMenuHide = function () {
-
   let newTop = pageYOffset;
 
   if (window.innerWidth <= 768 && newTop > initialTop) {
@@ -105,16 +100,7 @@ let mobileMenuHide = function () {
     navbar.style.opacity = "1";
     navbar.style.transform = "translate(0, 0px)";
   }
-}
-
-
-
-
-
-
-
-
-
+};
 
 //appear transition effect
 
@@ -174,10 +160,6 @@ toggle.addEventListener("change", function () {
     label.style.color = "#051821";
   }
 });
-
-
-
-
 
 // if the menu a get clicked when the toggle is checked, uncheck it. or if user scrolls when checked, uncheck it.
 
