@@ -1,3 +1,173 @@
+const images = [
+  {
+    href: "/img/portfolio-img/bathroom3.jpg",
+    src: "/img/portfolio-img/bathroom3.jpg",
+    caption: "Bathroom Tiles & Shower",
+    alt: "",
+  },
+  {
+    href: "/img/portfolio-img/bathtub-tiles.JPG",
+    src: "/img/portfolio-img/bathtub-tiles.jpg",
+    caption: "Shower Tiles",
+    alt: "",
+  },
+  {
+    href: "/img/portfolio-img/bathroom2.jpg",
+    src: "/img/portfolio-img/bathroom2.jpg",
+    caption: "Bathroom Counter Top",
+    alt: "",
+  },
+  {
+    href: "/img/portfolio-img/bathroom-sink1.JPG",
+    src: "/img/portfolio-img/bathroom-sink1.JPG",
+    caption: "Bathroom Sink",
+    alt: "",
+  },
+  {
+    href: "/img/portfolio-img/bathroom-sink4.JPG",
+    src: "/img/portfolio-img/bathroom-sink4.JPG",
+    caption: "Bathroom Sink",
+    alt: "",
+  },
+  {
+    href: "/img/portfolio-img/kitchen-cabinets.jpg",
+    src: "/img/portfolio-img/kitchen-cabinets.jpg",
+    caption: "Kitchen Cabinets",
+    alt: "",
+  },
+  {
+    href: "/img/portfolio-img/counter-top.jpg",
+    src: "/img/portfolio-img/counter-top.jpg",
+    caption: "Storage and Counter",
+    alt: "",
+  },
+  {
+    href: "/img/portfolio-img/shower-tiles3.jpg",
+    src: "/img/portfolio-img/shower-tiles3.jpg",
+    caption: "Shower Tiles & Bath",
+    alt: "",
+  },
+  {
+    href: "/img/portfolio-img/jan2021-01-min.jpeg",
+    src: "/img/portfolio-img/jan2021-01-min.jpeg",
+    caption: "Door",
+    alt: "door",
+  },
+
+  {
+    href: "/img/portfolio-img/bathroom-sink5.jpg",
+    src: "/img/portfolio-img/bathroom-sink5.jpg",
+    caption: "Bathroom Sink",
+    alt: "sink",
+  },
+  {
+    href: "/img/portfolio-img/feb2020-1.jpg",
+    src: "/img/portfolio-img/feb2020-1.jpg",
+    caption: "Shower",
+    alt: "",
+  },
+  {
+    href: "/img/portfolio-img/feb2020-2.jpg",
+    src: "/img/portfolio-img/feb2020-2.jpg",
+    caption: "Shower Tiles",
+    alt: "",
+  },
+  {
+    href: "/img/portfolio-img/feb2020-5.jpg",
+    src: "/img/portfolio-img/feb2020-5.jpg",
+    caption: "Bathtub",
+    alt: "",
+  },
+  {
+    href: "/img/portfolio-img/feb2020-6.jpg",
+    src: "/img/portfolio-img/feb2020-6.jpg",
+    caption: "Shower",
+    alt: "",
+  },
+  {
+    href: "/img/portfolio-img/sept2020-1.jpg",
+    src: "/img/portfolio-img/sept2020-1.jpg",
+    caption: "Shower",
+    alt: "",
+  },
+  {
+    href: "/img/portfolio-img/april2021.jpeg",
+    src: "/img/portfolio-img/april2021.jpeg",
+    caption: "Shower",
+    alt: "shower",
+  },
+  {
+    href: "/img/portfolio-img/feb2022.jpeg",
+    src: "/img/portfolio-img/feb2022.jpeg",
+    caption: "Shower",
+    alt: "shower",
+  },
+  {
+    href: "/img/portfolio-img/feb2022-2.jpeg",
+    src: "/img/portfolio-img/feb2022-2.jpeg",
+    caption: "Shower",
+    alt: "shower",
+  },
+  {
+    href: "/img/portfolio-img/bathtub_tiles.jpg",
+    src: "/img/portfolio-img/bathtub_tiles.jpg",
+    caption: "Tub & tiles",
+    alt: "Tub & tiles",
+  },
+  {
+    href: "/img/portfolio-img/shed.jpg",
+    src: "/img/portfolio-img/shed.jpg",
+    caption: "Shed",
+    alt: "Shed",
+  },
+  {
+    href: "img/portfolio-img/kitchen-stove.jpg",
+    src: "img/portfolio-img/kitchen-stove.jpg",
+    caption: "Kitchen & Cabinets",
+    alt: "Kitchen & Cabinets",
+  },
+  {
+    href: "/img/portfolio-img/shed.jpg",
+    src: "/img/portfolio-img/shed.jpg",
+    caption: "Shed",
+    alt: "Shed",
+  },
+  {
+    href: "/img/portfolio-img/shower_tiles.jpg",
+    src: "/img/portfolio-img/shower_tiles.jpg",
+    caption: "Shower & Tiles",
+    alt: "Shower & Tiles",
+  },
+  {
+    href: "/img/portfolio-img/kitchen_backsplash.jpg",
+    src: "/img/portfolio-img/kitchen_backsplash.jpg",
+    caption: "Kitchen & Backsplash",
+    alt: "Kitchen & Backsplash",
+  },
+];
+
+const gallery = document.getElementById("gallery");
+
+// Generate the gallery items
+images.forEach((image) => {
+  const listItem = document.createElement("li");
+  listItem.className = "glide__slide";
+
+  const link = document.createElement("a");
+  link.href = image.href;
+  link.setAttribute("data-fancybox", "gallery");
+  link.setAttribute("data-caption", image.caption);
+
+  const img = document.createElement("img");
+  img.src = image.src;
+  img.alt = image.alt || "";
+  img.className = "modalImage";
+
+  link.appendChild(img);
+  listItem.appendChild(link);
+  gallery.appendChild(listItem);
+});
+
 let hamburger = document.querySelector("#toggle");
 let menu = document.querySelector(".menu");
 
