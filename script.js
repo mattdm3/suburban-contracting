@@ -126,12 +126,7 @@ const images = [
     caption: "Kitchen & Cabinets",
     alt: "Kitchen & Cabinets",
   },
-  {
-    href: "/img/portfolio-img/shed.jpg",
-    src: "/img/portfolio-img/shed.jpg",
-    caption: "Shed",
-    alt: "Shed",
-  },
+
   {
     href: "/img/portfolio-img/shower_tiles.jpg",
     src: "/img/portfolio-img/shower_tiles.jpg",
@@ -143,6 +138,24 @@ const images = [
     src: "/img/portfolio-img/kitchen_backsplash.jpg",
     caption: "Kitchen & Backsplash",
     alt: "Kitchen & Backsplash",
+  },
+  {
+    href: "/img/portfolio-img/IMG_5249.jpg",
+    src: "/img/portfolio-img/IMG_5249.jpg",
+    caption: "Bathroom",
+    alt: "Bathroom",
+  },
+  {
+    href: "/img/portfolio-img/IMG_5250.jpg",
+    src: "/img/portfolio-img/IMG_5250.jpg",
+    caption: "Bathroom & Vanity",
+    alt: "Bathroom & Vanity",
+  },
+  {
+    href: "/img/portfolio-img/IMG_5251.jpg",
+    src: "/img/portfolio-img/IMG_5251.jpg",
+    caption: "Shower Tiles",
+    alt: "Bathroom Tiles",
   },
 ];
 
